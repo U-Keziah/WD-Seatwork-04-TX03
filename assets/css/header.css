@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: rgb(208, 95, 95);
+  
+    & .header_nav {
+      width: 45vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  
+      & a {
+        text-decoration: none;
+        font-size: 15px;
+        color: white;
+        transition: all 0.5s ease-in-out;
+  
+        &:hover {
+          transform: scale(1.5);
+        }
+      }
+    }
+  }

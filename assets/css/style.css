@@ -5,7 +5,7 @@
 
 .section {
     width: 100vw;
-    height: 100vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -25,5 +25,7 @@
         background-size: cover;
         z-index: -1;
         filter: blur(2px);
+
+        
     }
 }
