@@ -124,6 +124,7 @@
 
         & .column_text {
           width: 87dvw;
+          padding: 20px;
         }
 
         & .column_video {
