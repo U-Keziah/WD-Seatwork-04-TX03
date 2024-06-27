@@ -1,0 +1,211 @@
+body {
+  position: relative;
+  overflow-y: auto; /* Add this to enable smooth scrolling */
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150%;
+    width: 100%;
+    content: " ";
+    background-position: center;
+    background-image: url(../img/bg-imag-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: blur(5px);
+    z-index: -1;
+  }
+}
+section {
+  &.background {
+    height: 110dvh;
+    width: 100dvw;
+    z-index: 1;
+
+    &.feature-01 {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+
+      & .text {
+        color: white;
+        font-size: 25px;
+      }
+    }
+
+    &.feature-02 {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+
+      & .text {
+        color: white;
+        font-size: 25px;
+      }
+    }
+
+    &.feature-03 {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      align-items: center;
+      justify-content: space-around;
+
+      & .text {
+        color: white;
+        font-size: 25px;
+      }
+
+      & .gallery-1 {
+        padding: 1rem;
+
+        & .swiper-01 {
+          position: relative;
+          margin: 0 auto;
+          width: 25dvw;
+
+          & .row-01 {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-scrollbar: none;
+            -moz-scrollbar-width: none;
+            scrollbar-width: none;
+            scroll-behavior: smooth;
+
+            & .container {
+              display: flex;
+              justify-content: center;
+              align-content: center;
+              align-items: center;
+              flex-direction: column;
+              text-align: center;
+              
+              & h1{
+                width: 50dvh;
+              }
+
+              & h3 {
+                width: 50dvh;
+
+              }
+
+              &.gacha-01 {
+                
+                height: 25rem;
+                width: 30dvw;
+                background-color: red;
+                scroll-snap-align: start;
+
+                
+              }
+              &.gacha-02 {
+                height: 25rem;
+                width: 35dvw;
+                background-color: blue;
+                scroll-snap-align: start;
+              }
+              &.gacha-03 {
+                height: 25rem;
+                width: 35dvw;
+                background-color: red;
+                scroll-snap-align: start;
+              }
+              &.gacha-04 {
+                height: 25rem;
+                width: 35dvw;
+                background-color: red;
+                scroll-snap-align: start;
+              }
+              &.gacha-05 {
+                height: 25rem;
+                width: 35dvw;
+                background-color: red;
+                scroll-snap-align: start;
+              }
+              &.gacha-06 {
+                height: 25rem;
+                width: 35dvw;
+                background-color: red;
+                scroll-snap-align: start;
+              }
+            }
+          }
+        }
+      }
+
+      & .gallery-2 {
+        padding: 1rem;
+        position: relative;
+
+        & .swiper {
+          position: relative;
+          margin: 0 auto;
+          max-width: 25dvw;
+
+          & .row {
+            display: flex;
+            height: 25rem;
+            width: 15rem;
+            align-items: center;
+            object-fit: cover;
+            padding: 2.5rem;
+
+            flex-direction: row;
+            overflow-x: auto;
+
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            -webkit-scrollbar: none;
+            -moz-scrollbar-width: none;
+            scrollbar-width: none;
+            background-color: aquamarine;
+          }
+
+          & img {
+            height: 250px;
+            padding: 2.5rem;
+            scroll-snap-align: start;
+
+            &:hover {
+              transform: scale(1.5);
+            }
+          }
+        }
+
+      }
+
+      & .buttons {
+        display: flex;
+        column-gap: 1rem;
+        position: absolute;
+        bottom: 5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+  
+        & a {
+          width: 0.5rem;
+          height: 0.5rem;
+          border-radius: 50%;
+          background-color: black;
+          opacity: 0.75;
+          transform: opacity ease 250ms;
+  
+          &:hover {
+            background-color: grey;
+          }
+        }
+      }
+    }
+  }
+}
