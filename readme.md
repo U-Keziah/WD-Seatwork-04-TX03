@@ -11,7 +11,7 @@
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  Short Description. (Optional)
+Feature Display
 </div>
 
 <br />
@@ -56,17 +56,16 @@
 Description of the project in details.
 
 Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+- This project contains 2 whole page full of feature display. This activity is a good practice using html and css and the design is inspired by anime called Oshi no Ko. 
+
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+- MultiPage Website
+- Smooth Scroll
+- Link to diffent platforms
+- Horizonatal Gallery
 
 ### Technology
 <!-- TODO: List of Technology Used -->
@@ -112,4 +111,8 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| Ichigo Production | Reference to use in Feature Page 1 | https://ichigoproduction.com/ |
+| Othellonia x Oshi no Ko Crossover Runs from June 23 | Reference to use in Feature Page 2 | https://news.qoo-app.com/en/post/176713/othellonia-oshi-no-ko |
+| HTML and CSS Project Tutorial: Pure CSS Image Slider | Reference to learn how to make a horizontal gallery | https://youtu.be/McPdzhLRzCg?si=WaJg4sPIiLn0d9ie |
+| HTML and CSS Project Tutorial: Pure CSS Image Slider | Reference to learn how to make a horizontal gallery | https://youtu.be/McPdzhLRzCg?si=WaJg4sPIiLn0d9ie |
+
