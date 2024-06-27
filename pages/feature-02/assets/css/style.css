@@ -6,7 +6,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    height: 150%;
+    height: 100%;
     width: 100%;
     content: " ";
     background-position: center;
@@ -40,15 +40,47 @@ section {
 
     &.feature-02 {
       display: flex;
-      flex-direction: row;
-      align-content: center;
-      align-items: center;
-      justify-content: center;
-      gap: 25px;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 150dvh;
 
       & .text {
-        color: white;
-        font-size: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 25dvh;
+        color: aliceblue;
+        width: 100dvw;
+
+        & h3 {
+          font-size: 25px;
+          text-align: justify;
+          width: 50dvw;
+        }
+      }
+
+      & .image {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+
+        &.center {
+          & img {
+            width: 20rem;
+            height: 45rem;
+            object-fit: cover;
+          }
+        }
+
+        &.out {
+          & img {
+            width: 20rem;
+            height: 40rem;
+            object-fit: cover;
+          }
+        }
       }
     }
 
@@ -81,32 +113,31 @@ section {
             -moz-scrollbar-width: none;
             scrollbar-width: none;
             scroll-behavior: smooth;
+            width: 100%;
 
             & .container {
+              flex: 0 0 300px; /* adjust the width to your liking */
+              margin: 10px;
               display: flex;
               justify-content: center;
               align-content: center;
               align-items: center;
               flex-direction: column;
               text-align: center;
-              
-              & h1{
+
+              & h1 {
                 width: 50dvh;
               }
 
               & h3 {
                 width: 50dvh;
-
               }
 
               &.gacha-01 {
-                
                 height: 25rem;
                 width: 30dvw;
                 background-color: red;
                 scroll-snap-align: start;
-
-                
               }
               &.gacha-02 {
                 height: 25rem;
@@ -181,7 +212,6 @@ section {
             }
           }
         }
-
       }
 
       & .buttons {
@@ -192,7 +222,7 @@ section {
         left: 50%;
         transform: translateX(-50%);
         z-index: 1;
-  
+
         & a {
           width: 0.5rem;
           height: 0.5rem;
@@ -200,7 +230,7 @@ section {
           background-color: black;
           opacity: 0.75;
           transform: opacity ease 250ms;
-  
+
           &:hover {
             background-color: grey;
           }
