@@ -26,6 +26,37 @@
         z-index: -1;
         filter: blur(2px);
 
-        
+    }
+
+    & h3{
+        font-size: 25px;
+    }
+
+    & h1{
+        font-size: 55px;
+    }
+
+    & p{
+        padding: 2rem;
+        width: 35rem;
+    }
+    & .navigation{
+        display: flex;
+        width: 25rem;
+        flex-direction: row;
+        padding: 1rem;
+        justify-content: space-between;
+
+        & a{
+            display: flex;
+            background-color: pink;
+            height: 3rem;
+            width: 10rem;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            text-decoration: none;
+            border-radius: 25px;
+        }
     }
 }
