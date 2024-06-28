@@ -66,6 +66,8 @@ Guiding Question:
 - Smooth Scroll
 - Link to diffent platforms
 - Horizonatal Gallery
+- Flip Cards
+- Pop up Elements
 
 ### Technology
 <!-- TODO: List of Technology Used -->
