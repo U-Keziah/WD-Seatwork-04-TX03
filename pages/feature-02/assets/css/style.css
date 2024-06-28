@@ -26,23 +26,38 @@ section {
 
     &.feature-01 {
       display: flex;
-      flex-direction: column;
       align-content: center;
       align-items: center;
-      justify-content: center;
+      justify-content: space-evenly;
       gap: 25px;
+      
 
       & .text {
         color: white;
-        font-size: 25px;
+        width: 500px;
+
+        & p{
+          font-family: "Arvo", serif;
+          font-size: 20px;
+          padding: 15px;
+        }
+
+        & h1{
+          font-family: "Oswald", sans-serif;
+          font-size: 2rem;
+          padding: 15px;
+
+        }
       }
     }
 
+ 
     &.feature-02 {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      height: 150dvh;
+      height:95dvh;
+      overflow: hidden;
 
       & .text {
         display: flex;
@@ -53,9 +68,11 @@ section {
         width: 100dvw;
 
         & h3 {
+          font-family: "Arvo", serif;
           font-size: 25px;
           text-align: justify;
           width: 50dvw;
+         
         }
       }
 
@@ -63,26 +80,36 @@ section {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-evenly;
-        height: 115dvh;
+        justify-content: center;      
+        
+        
 
         &.center {
           & img {
             width: 20rem;
-            height: 45rem;
-            object-fit: cover;
+            height: 30rem;
+            object-fit: contain;
+            animation: pop-in-center 3s ease;
+
+            }
+
+          }
+          &.out {
+            & img {
+              width: 20rem;
+              height: 25rem;
+              object-fit: contain;
+  
+              animation: pop-in-center 3s ease;
+            }
           }
         }
 
-        &.out {
-          & img {
-            width: 20rem;
-            height: 35rem;
-            object-fit: cover;
-          }
-        }
+
       }
+
     }
+
 
     &.feature-03 {
       height: 85dvh;
@@ -217,15 +244,38 @@ section {
             justify-content: center;
             align-content: center;
             background-color: #2980b9;
-            color: white;
             transform: rotateY(360deg);  
             visibility: hidden;        
+
+            & h1 {
+              color: white;
+              font-family: "Oswald", sans-serif;
+              font-size: 20px;
+            }
+
+            & h3{
+              font-family: "Arvo", serif;
+            }
           }
         }
 
-      }
-
-     
+      }  
     }
-  }
+  
+
+  .Animation{
+    animation: pop-in-center both;
+    animation-timeline: view(70% 5%);
+    }
+    
+    @keyframes pop-in-center{
+         from{
+    opacity:0;
+    transform: translateY(200px) scale(0.3);
+    }to{
+         opacity:1;
+    transform: translateY(0) scale(1);
+       }
+    }
+
 
