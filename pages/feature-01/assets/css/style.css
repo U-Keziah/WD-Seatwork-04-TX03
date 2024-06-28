@@ -19,6 +19,7 @@
         display: flex;
         flex-direction: row;
         scroll-snap-align: start;
+        align-items: center;
         width: 89dvw;
         padding: 10px;
         background-image: url(../img/pink-bg-01.jpg);
@@ -26,26 +27,32 @@
         background-size: cover;
 
         & .column_text {
-          width: 50vw;
+          width: 50vw;     
+        
         }
 
         & .column_image {
-          width: 50vw;
+          width: 40vw;
           display: flex;
           align-items: center;
           justify-content: center;
         }
 
         & .logo img {
+  
           object-fit: cover;
           width: 150px;
           height: 80px;
         }
 
         & p {
+          font-family: "Oswald", sans-serif;
+          letter-spacing: 1px;
           padding: 1rem;
           text-indent: 5%;
+          font-size: 19px;
           text-align: justify;
+          width:40dvw ;
         }
       }
 
@@ -107,7 +114,7 @@
               display: flex;
               flex-direction: column;
               align-items: center;
-              width: 8rem;
+              width: 9rem;
             }
           }
         }
@@ -125,6 +132,15 @@
         & .column_text {
           width: 87dvw;
           padding: 20px;
+
+          & h1{
+            font-family: "Arvo", serif;
+            font-size: 35px;
+            -webkit-text-stroke: 2px;
+            -webkit-text-stroke-color: black;
+            color: transparent;
+            letter-spacing: 2px;
+          }
         }
 
         & .column_video {
@@ -147,8 +163,12 @@
               align-items: center;
               background-color: pink;
               height: 50px;
-              width: 100px;
+              width: 200px;
               text-decoration: none;
+              font-size: 25px;
+              color: white;
+              font-family: "Oswald", sans-serif;
+              border-radius: 25px;
             }
           }
         }
