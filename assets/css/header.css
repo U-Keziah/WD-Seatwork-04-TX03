@@ -6,10 +6,10 @@
   header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 15px;
-    background-color: wheat;
+    background-color: rgb(120, 60, 60);
   
     & .logo_01{
       transition: all 0.5s ease-in-out;
@@ -28,7 +28,7 @@
       & a {
         text-decoration: none;
         font-size: 15px;
-        color: black;
+        color: wheat;
         transition: all 0.5s ease-in-out;
   
         &:hover {
