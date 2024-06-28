@@ -113,6 +113,7 @@ section {
 
     &.feature-03 {
       height: 85dvh;
+      width: 100dvw;
       position: relative;
       display: flex;
       flex-direction: row;
